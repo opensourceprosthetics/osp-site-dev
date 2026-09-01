@@ -1,8 +1,8 @@
 
 
 export const siteConfig = {
-  name: 'Cooper',
-  description: 'Premium Astro Boilerplate for explorers.',
+  name: 'Open Source Prosthetics',
+  description: '3D prosthetics for the world.',
   logo: {
     src: '/logo.svg',
     srcDark: '/logo.svg',       // Used when strategy is 'switch'
