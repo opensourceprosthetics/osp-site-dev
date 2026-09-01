@@ -180,29 +180,6 @@ const homeFaqs = [
     </FeaturesList>
 </Section>
 
-<Section id="tech-stack" class="py-24 bg-foreground/2">
-    <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold mb-4 italic">{t['techstack.title']}</h2>
-        <p class="text-muted-foreground">{t['techstack.subtitle']}</p>
-    </div>
-    <div class="max-w-6xl mx-auto px-6">
-        <TechStack t={t} />
-    </div>
-</Section>
-
-<Section class="py-0 overflow-visible">
-<Stats>
-    {stats.map((stat) => (
-        <StatItem value={stat.value} label={stat.label} />
-    ))}
-</Stats>
-</Section>
-
-<NewsletterSection
-    title="Stay Informed"
-    description="Join our newsletter to receive the latest updates, technical deep-dives, and exclusive content from the Cooper universe."
-/>
-
 <CTA
     title={t['cta.readyToLaunch']}
     description={t['cta.description']}
