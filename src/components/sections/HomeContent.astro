@@ -198,24 +198,6 @@ const homeFaqs = [
 </Stats>
 </Section>
 
-<Section class="py-0 overflow-visible">
-<Testimonials>
-  {testimonials.map((testimonial) => (
-    <Testimonial
-      text={testimonial.text}
-      author={testimonial.author}
-      role={testimonial.role}
-    />
-  ))}
-</Testimonials>
-</Section>
-
-<LatestPosts count={6}/>
-
-<Section class="py-0 overflow-visible">
-<FAQ items={homeFaqs} />
-</Section>
-
 <NewsletterSection
     title="Stay Informed"
     description="Join our newsletter to receive the latest updates, technical deep-dives, and exclusive content from the Cooper universe."
