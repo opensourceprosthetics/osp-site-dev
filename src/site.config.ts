@@ -14,12 +14,12 @@ export const siteConfig = {
   search: {
     enabled: true,
   },
-  announcement: {
-    enabled: true,
-    id: 'upgrade_v2_0_0', // Change this ID to reshow the banner
-    link: '/changelog',
-    localizeLink: true, // Set to true to apply i18n routing to the link, false for external/absolute links
-  },
+ // announcement: {
+ //   enabled: true,
+ //   id: 'upgrade_v2_0_0', // Change this ID to reshow the banner
+ //   link: '/changelog',
+ //   localizeLink: true, // Set to true to apply i18n routing to the link, false for external/absolute links
+ // },
   blog: {
     postsPerPage: 6,
   },
