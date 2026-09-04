@@ -81,9 +81,7 @@ const primaryHref = ACTION_LINKS.primary.href.startsWith('/docs')
           />
         )
       )}
-      <span 
-      	class="md:hidden lg:inline">{t['brand.name'] || siteConfig.name}
-      </span>
+      <span class="md:hidden lg:inline"></span>
     </a>
     <div class="flex-1 flex justify-center mx-4 lg:mx-8">
       <DesktopNav client:only="react" links={links} currentPath={Astro.url.pathname} />
