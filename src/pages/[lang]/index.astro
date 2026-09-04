@@ -12,14 +12,11 @@ export async function getStaticPaths() {
 const { lang = defaultLang } = Astro.params;
 ---
 
-<Layout 
-	title="Open Source Prosthetics" 
-	description="Cooper -The ultimate Astro starter Boilerplate for your next project. Made by Gladtek"
->
+<Layout title="Open Source Prosthetics" description="3D prosthetics for the world.">
     <Schema item={{
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "Cooper",
+            "name": "OSP",
             "url": Astro.site,
             "potentialAction": {
                 "@type": "SearchAction",
@@ -33,7 +30,7 @@ const { lang = defaultLang } = Astro.params;
     <Schema item={{
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            "name": "Cooper",
+            "name": "OSP",
             "operatingSystem": "Web",
             "applicationCategory": "DeveloperApplication",
             "offers": {
