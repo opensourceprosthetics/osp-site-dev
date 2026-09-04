@@ -5,14 +5,14 @@ export const siteConfig = {
   description: '3D prosthetics for the world.',
   logo: {
     src: '/logo.svg',
-    srcDark: '/logo.svg',       // Used when strategy is 'switch'
-    alt: 'Cooper Logo',
+    srcDark: '/logo-white.svg',       // Used when strategy is 'switch'
+    alt: 'Open Source Prosthetics Logo',
     strategy: 'invert' as 'invert' | 'switch' | 'static', // 'invert' | 'switch' | 'static'
   },
   ogImage: '/og-image.webp',
-  primaryColor: '#00008B', // Default primary color
+  primaryColor: '#0f8d78', // Default primary color
   search: {
-    enabled: true,
+    enabled: false,
   },
  // announcement: {
  //   enabled: true,
@@ -25,16 +25,16 @@ export const siteConfig = {
   },
   contact: {
     email: {
-      support: 'support@interstellar.com',
-      sales: 'sales@interstellar.com',
+      support: 'support@opensourceprosthetics.org',
+      sales: 'sales@opensourceprosthetics.org',
     },
     phone: {
       main: '+1 (555) 123-4567',
       label: 'Mon-Fri 9am-6pm PST'
     },
     address: {
-      city: 'Endurance',
-      full: 'Interstellar Space Station'
+      city: 'Midrand',
+      full: 'Johannesburg, South Africa'
     }
   },
   analytics: {
