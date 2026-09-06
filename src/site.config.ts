@@ -23,7 +23,6 @@ export const siteConfig = {
   blog: {
     postsPerPage: 6,
   },
-
   contact: {
     email: {
       support: 'support@opensourceprosthetics.org',
