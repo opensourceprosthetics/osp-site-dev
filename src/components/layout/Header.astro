@@ -39,7 +39,7 @@ const translateNavLinks = (links: any[], lang: string, t: any): any[] => {
 
 const links = translateNavLinks(NAV_LINKS, lang, t);
 
-const primaryHref = ACTION_LINKS.primary.href.startsWith('/docs')
+const primaryHref = ACTION_LINKS.primary.href.startsWith('/contact')
   ? ACTION_LINKS.primary.href
   : `/${lang}${ACTION_LINKS.primary.href.startsWith('/') ? '' : '/'}${ACTION_LINKS.primary.href}`.replace(/\/$/, '');
 ---
