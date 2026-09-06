@@ -78,7 +78,7 @@ const authorsCollection = defineCollection({
 });
 
 export const collections = {
-	'blog': blogCollection,
+    'blog': blogCollection,
     'portfolio': portfolioCollection,
     'docs': docsCollection,
     'changelog': changelogCollection,
