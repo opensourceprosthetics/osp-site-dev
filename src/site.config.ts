@@ -5,9 +5,9 @@ export const siteConfig = {
   description: '3D prosthetics for the world.',
   logo: {
     src: '/logo.svg',
-    srcDark: '/logo-white.svg',       // Used when strategy is 'switch'
+    srcDark: '/logo-inverted.svg',       // Used when strategy is 'switch'
     alt: 'Open Source Prosthetics Logo',
-    strategy: 'invert' as 'invert' | 'switch' | 'static', // 'invert' | 'switch' | 'static'
+    strategy: 'switch' as 'switch' | 'invert' | 'static', // 'invert' | 'switch' | 'static'
   },
   ogImage: '/og-image.webp',
   primaryColor: '#0f8d78', // Default primary color
@@ -66,7 +66,7 @@ export const siteConfig = {
 
 export const NAV_LINKS = [
   {
-    href: '/home',
+    href: '/',
     label: 'Home'
   },
   {
