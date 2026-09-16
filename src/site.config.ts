@@ -114,11 +114,11 @@ export const NAV_LINKS = [
 export const ACTION_LINKS = {
   primary: { label: 'Get Started', href: '/docs/getting-started' },
   social: { 
-    twitter: 'https://twitter.com/gladtek',
-    linkedin: 'https://linkedin.com/company/gladtek',
-    github: 'https://github.com/gladtek',
-    youtube: 'https://youtube.com/@gladtek',
-    facebook: 'https://facebook.com/gladtek'
+    twitter: 'https://twitter.com/opensourceprosthetics',
+    linkedin: 'https://linkedin.com/company/opensourceprosthetics',
+    github: 'https://github.com/opensourceprosthetics',
+    youtube: 'https://youtube.com/@opensourceprosthetics',
+    facebook: 'https://facebook.com/opensourceprosthetics'
     
   }
 };
