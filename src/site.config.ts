@@ -25,16 +25,16 @@ export const siteConfig = {
   },
   contact: {
     email: {
-      support: 'support@interstellar.com',
-      sales: 'sales@interstellar.com',
+      support: 'support@opensourceprosthetics.org',
+      sales: 'sales@opensourceprosthetics.org',
     },
     phone: {
-      main: '+1 (555) 123-4567',
+      main: '+27 123-4567',
       label: 'Mon-Fri 9am-6pm PST'
     },
     address: {
-      city: 'Endurance',
-      full: 'Interstellar Space Station'
+      city: 'Midrand',
+      full: 'Johannesburg, South Africa'
     }
   },
   analytics: {
