@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Button from '~/components/ui/Button.astro';
 import Badge from '~/components/ui/Badge.astro';
-import gargantua from '~/assets/blog/interstellar-gargantua.webp';
+import gargantua from '~/assets/spin-baby.webp';
 import type { HeroVariantProps } from './types';
 
 export interface Props extends HeroVariantProps {}
@@ -70,7 +70,7 @@ const { badge, title, highlight, description, primaryCta, secondaryCta } = Astro
   }
 
   .orbit-visual {
-    animation: spin 60s linear infinite;
+    animation: spin 30s linear infinite;
   }
 
   @keyframes fadeUp {
