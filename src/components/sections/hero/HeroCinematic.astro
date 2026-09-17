@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Button from '~/components/ui/Button.astro';
 import Badge from '~/components/ui/Badge.astro';
-import wormhole from '~/assets/blog/interstellar-wormhole.webp';
+import graphic from '~/assets/pages/background-graphics-04.webp';
 import type { HeroVariantProps } from './types';
 
 export interface Props extends HeroVariantProps {}
@@ -12,7 +12,7 @@ const { badge, title, highlight, description, primaryCta, secondaryCta } = Astro
 
 <section data-hero-variant="cinematic" class="min-h-[90vh] flex items-end relative overflow-hidden pt-32 bg-background">
   <Image
-    src={wormhole}
+    src={graphic}
     alt=""
     aria-hidden="true"
     width={1920}
