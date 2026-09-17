@@ -12,7 +12,10 @@ export async function getStaticPaths() {
 const { lang = defaultLang } = Astro.params;
 ---
 
-<Layout title="Cooper | Engineered for the Unknown" description="Cooper -The ultimate Astro starter Boilerplate for your next project. Made by Gladtek">
+<Layout 
+	title="Open Source Prosthetics" 
+	description="Open Source Prosthetics - 3D printed prosthetics for the world"
+>
     <Schema item={{
             "@context": "https://schema.org",
             "@type": "WebSite",
@@ -45,5 +48,5 @@ const { lang = defaultLang } = Astro.params;
             }
         }} />
 
-    <HomeContent lang={lang} heroVariant="centered" />
+    <HomeContent lang={lang} heroVariant="split" />
 </Layout>
