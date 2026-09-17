@@ -1,13 +1,13 @@
 
 
 export const siteConfig = {
-  name: 'Cooper',
-  description: 'Premium Astro Boilerplate for explorers.',
+  name: 'Open Source Prosthetics',
+  description: '3D Printed Prosthetics for the world.',
   logo: {
     src: '/logo.svg',
-    srcDark: '/logo.svg',       // Used when strategy is 'switch'
-    alt: 'Cooper Logo',
-    strategy: 'invert' as 'invert' | 'switch' | 'static', // 'invert' | 'switch' | 'static'
+    srcDark: '/logo-inverted.svg',       // Used when strategy is 'switch'
+    alt: 'OSP Logo',
+    strategy: 'switch' as 'switch' | 'invert' | 'static', // 'invert' | 'switch' | 'static'
   },
   ogImage: '/og-image.webp',
   primaryColor: '#00008B', // Default primary color
