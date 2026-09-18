@@ -65,50 +65,54 @@ export const siteConfig = {
 };
 
 export const NAV_LINKS = [
-  { 
-    href: '/features', 
-    label: 'Product',
-    children: [
-        { href: '/features', label: 'Features', description: 'What makes us different', icon: 'Zap' },
-        { href: '/pricing', label: 'Pricing', description: 'Plans for every team', icon: 'CreditCard' },
-    ]
-  },
-  { 
-    href: '/docs', 
-    label: 'Resources',
-    children: [
-        { href: '/docs/getting-started', label: 'Docs', description: 'Start building today', icon: 'Book', localize: false },
-        { href: '/blog', label: 'Blog', description: 'Latest updates & guides', icon: 'Newspaper' },
-        { href: '/changelog', label: 'Changelog', description: 'New features & fixes', icon: 'FileClock' },
-    ]
-  },
-  { 
-    href: '/portfolio', 
-    label: 'Work',
-    children: [
-        { href: '/portfolio', label: 'All Projects', description: 'Our complete portfolio', icon: 'LayoutGrid' },
-        { href: '/design', label: 'Design System', description: 'Style guide & tokens', icon: 'Palette' },
-    ]
-  },
+//  { 
+//    href: '/features', 
+//    label: 'Product',
+//    children: [
+//        { href: '/features', label: 'Features', description: 'What makes us different', icon: 'Zap' },
+//        { href: '/pricing', label: 'Pricing', description: 'Plans for every team', icon: 'CreditCard' },
+//    ]
+//  },
+//  { 
+//    href: '/docs', 
+//    label: 'Resources',
+//    children: [
+//        { href: '/docs/getting-started', label: 'Docs', description: 'Start building today', icon: 'Book', localize: false },
+//        { href: '/blog', label: 'Blog', description: 'Latest updates & guides', icon: 'Newspaper' },
+//        { href: '/changelog', label: 'Changelog', description: 'New features & fixes', icon: 'FileClock' },
+//    ]
+//  },
+//  { 
+//    href: '/portfolio', 
+//    label: 'Work',
+//    children: [
+//       { href: '/portfolio', label: 'All Projects', description: 'Our complete portfolio', icon: 'LayoutGrid' },
+//        { href: '/design', label: 'Design System', description: 'Style guide & tokens', icon: 'Palette' },
+//    ]
+//  },
   {
     href: '/about',
-    label: 'Company',
-    children: [
-        { href: '/about', label: 'About', description: 'Our story & mission', icon: 'Building2' },
-        { href: '/contact', label: 'Contact', description: 'Get in touch with us', icon: 'Mail' },
-    ]
+    label: 'About',
+//    children: [
+//        { href: '/about', label: 'About', description: 'Our story & mission', icon: 'Building2' },
+//        { href: '/contact', label: 'Contact', description: 'Get in touch with us', icon: 'Mail' },
+//    ]
   },
   {
-    href: '/demo/home-centered',
-    label: 'Demos',
-    localize: false,
-    children: [
-        { href: '/demo/home-centered', label: 'Home Centered', description: 'Default centered hero', icon: 'LayoutTemplate', localize: false },
-        { href: '/demo/home-split', label: 'Home Split', description: 'Split-screen hero with orbit visual', icon: 'Columns2', localize: false },
-        { href: '/demo/home-cinematic', label: 'Home Cinematic', description: 'Full-bleed cinematic hero', icon: 'Film', localize: false },
-        { href: '/demo/home-terminal', label: 'Home Terminal', description: 'Mission-readout hero with stats', icon: 'Terminal', localize: false },
-    ]
+    href: '/contact',
+    label: 'Contact',
   },
+//  {
+//    href: '/demo/home-centered',
+//    label: 'Demos',
+//    localize: false,
+//    children: [
+//        { href: '/demo/home-centered', label: 'Home Centered', description: 'Default centered hero', icon: 'LayoutTemplate', localize: false },
+//        { href: '/demo/home-split', label: 'Home Split', description: 'Split-screen hero with orbit visual', icon: 'Columns2', localize: false },
+//        { href: '/demo/home-cinematic', label: 'Home Cinematic', description: 'Full-bleed cinematic hero', icon: 'Film', localize: false },
+//        { href: '/demo/home-terminal', label: 'Home Terminal', description: 'Mission-readout hero with stats', icon: 'Terminal', localize: false },
+//    ]
+//  },
 ];
 
 export const ACTION_LINKS = {
