@@ -15,12 +15,9 @@ import BentoItem from '~/components/ui/BentoItem.astro';
 import { Cpu, Globe, Zap, BarChart, ShieldCheck, Settings, FileCode, Search, Moon, Eye } from 'lucide-react';
 import FeaturesList from '~/components/sections/FeaturesList.astro';
 import FeatureItem from '~/components/ui/FeatureItem.astro';
-import Testimonials from '~/components/sections/Testimonials.astro';
 import Stats from '~/components/sections/Stats.astro';
 import StatItem from '~/components/ui/StatItem.astro';
 import CTA from '~/components/sections/CTA.astro';
-import FAQ from '~/components/sections/FAQ.astro';
-import LogoCloud from '~/components/sections/LogoCloud.astro';
 import TechStack from '~/components/sections/TechStack.astro';
 import NewsletterSection from '~/components/sections/NewsletterSection.astro';
 import { useTranslations } from '~/i18n/utils';
@@ -32,15 +29,6 @@ export interface Props {
 
 const { lang, heroVariant = 'centered' } = Astro.props;
 const t = useTranslations(lang);
-
-const logos = [
-  { name: 'Vite', src: logoVite, description: t['logo.vite.desc'] },
-  { name: 'Cloudflare', src: logoCloudflare, description: t['logo.cloudflare.desc'] },
-  { name: 'Astro', src: logoAstro, description: t['logo.astro.desc'] },
-  { name: 'React', src: logoReact, description: t['logo.react.desc'] },
-  { name: 'Tailwind CSS', src: logoTailwind, description: t['logo.tailwind.desc'] },
-  { name: 'Framer Motion', src: logoFramer, description: t['logo.framer.desc'] },
-];
 
 const benefits = [
   { title: t['benefits.1.title'], description: t['benefits.1.desc'], icon: Settings },
@@ -75,8 +63,6 @@ const homeFaqs = [
     primaryCta={{ text: t['hero.getStarted'], href: `/${lang}/pricing` }}
     secondaryCta={{ text: t['hero.learnMore'], href: `/${lang}/features` }}
 />
-
-<LogoCloud title={t['logo.title']} logos={logos} />
 
 <Section class="py-0 overflow-visible">
 <BentoGrid
@@ -190,10 +176,6 @@ const homeFaqs = [
 </Section>
 
 <LatestPosts count={6}/>
-
-<Section class="py-0 overflow-visible">
-<FAQ items={homeFaqs} />
-</Section>
 
 <NewsletterSection
     title="Stay Informed"
