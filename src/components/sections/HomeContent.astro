@@ -16,7 +16,6 @@ import { Cpu, Globe, Zap, BarChart, ShieldCheck, Settings, FileCode, Search, Moo
 import FeaturesList from '~/components/sections/FeaturesList.astro';
 import FeatureItem from '~/components/ui/FeatureItem.astro';
 import Testimonials from '~/components/sections/Testimonials.astro';
-import Testimonial from '~/components/ui/Testimonial.astro';
 import Stats from '~/components/sections/Stats.astro';
 import StatItem from '~/components/ui/StatItem.astro';
 import CTA from '~/components/sections/CTA.astro';
@@ -57,14 +56,6 @@ const stats = [
   { value: "99.9%", label: t['stats.uptime'] },
   { value: "50M+", label: t['stats.requests'] },
   { value: "24/7", label: t['stats.support'] },
-];
-
-const testimonials = [
-  { text: t['testimonials.1.text'], author: t['testimonials.1.author'], role: t['testimonials.1.role'] },
-  { text: t['testimonials.2.text'], author: t['testimonials.2.author'], role: t['testimonials.2.role'] },
-  { text: t['testimonials.3.text'], author: t['testimonials.3.author'], role: t['testimonials.3.role'] },
-  { text: t['testimonials.4.text'], author: t['testimonials.4.author'], role: t['testimonials.4.role'] },
-  { text: t['testimonials.5.text'], author: t['testimonials.5.author'], role: t['testimonials.5.role'] },
 ];
 
 const homeFaqs = [
@@ -196,18 +187,6 @@ const homeFaqs = [
         <StatItem value={stat.value} label={stat.label} />
     ))}
 </Stats>
-</Section>
-
-<Section class="py-0 overflow-visible">
-<Testimonials>
-  {testimonials.map((testimonial) => (
-    <Testimonial
-      text={testimonial.text}
-      author={testimonial.author}
-      role={testimonial.role}
-    />
-  ))}
-</Testimonials>
 </Section>
 
 <LatestPosts count={6}/>
