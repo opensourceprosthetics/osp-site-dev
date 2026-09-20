@@ -128,20 +128,20 @@ export const ACTION_LINKS = {
 };
 
 export const FOOTER_LINKS = {
-  product: {
-    title: 'Product',
+  company: {
+    title: 'Company',
     links: [
-      { href: '/features', label: 'Features' },
+//      { href: '/features', label: 'Features' },
       { href: '/about', label: 'About' },
-      { href: '/pricing', label: 'Pricing' },
-      { href: '/changelog', label: 'Changelog' },
+//      { href: '/contact', label: 'Contact' }
+//      { href: '/changelog', label: 'Changelog' },
     ],
   },
-  legal: {
-    title: 'Legal',
+  service: {
+    title: 'Services',
     links: [
-      { href: '/privacy', label: 'Privacy', localize: false },
-      { href: '/terms', label: 'Terms', localize: false }
+     { href: '/contact', label: 'Contact', localize: false },
+//      { href: '/terms', label: 'Terms', localize: false }
     ],
   },
 };
