@@ -9,7 +9,6 @@ import logoTailwind from '~/assets/logos/Tailwind.webp';
 import logoFramer from '~/assets/logos/Motion.webp';
 import Hero from '~/components/sections/Hero.astro';
 import Section from '~/components/layout/Section.astro';
-import LatestPosts from '~/components/sections/LatestPosts.astro';
 import BentoGrid from '~/components/sections/BentoGrid.astro';
 import BentoItem from '~/components/ui/BentoItem.astro';
 import { Cpu, Globe, Zap, BarChart, ShieldCheck, Settings, FileCode, Search, Moon, Eye } from 'lucide-react';
@@ -173,8 +172,6 @@ const homeFaqs = [
     ))}
 </Stats>
 </Section>
-
-<LatestPosts count={6}/>
 
 <CTA
     title={t['cta.readyToLaunch']}
