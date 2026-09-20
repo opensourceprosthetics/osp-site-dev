@@ -19,7 +19,6 @@ import Stats from '~/components/sections/Stats.astro';
 import StatItem from '~/components/ui/StatItem.astro';
 import CTA from '~/components/sections/CTA.astro';
 import TechStack from '~/components/sections/TechStack.astro';
-import NewsletterSection from '~/components/sections/NewsletterSection.astro';
 import { useTranslations } from '~/i18n/utils';
 
 export interface Props {
@@ -176,11 +175,6 @@ const homeFaqs = [
 </Section>
 
 <LatestPosts count={6}/>
-
-<NewsletterSection
-    title="Stay Informed"
-    description="Join our newsletter to receive the latest updates, technical deep-dives, and exclusive content from the Cooper universe."
-/>
 
 <CTA
     title={t['cta.readyToLaunch']}
