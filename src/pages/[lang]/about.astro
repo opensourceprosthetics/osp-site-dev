@@ -104,17 +104,6 @@ const teamMembers = [
 
   <Section>
       <Container>
-          <div class="mb-24">
-             <Heading level={2} class="text-center mb-12">{t['about.why.title']}</Heading>
-             <FeaturesList>
-                {aboutBenefits.map((benefit) => (
-                    <FeatureItem title={benefit.title} description={benefit.description}>
-                        <benefit.icon slot="icon" className="w-6 h-6" />
-                    </FeatureItem>
-                ))}
-             </FeaturesList>
-          </div>
-
           <div>
             <TeamSection title={t['about.team.title']}>
               {teamMembers.map((member) => (
