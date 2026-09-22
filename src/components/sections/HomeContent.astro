@@ -9,21 +9,12 @@ import logoTailwind from '~/assets/logos/Tailwind.webp';
 import logoFramer from '~/assets/logos/Motion.webp';
 import Hero from '~/components/sections/Hero.astro';
 import Section from '~/components/layout/Section.astro';
-import LatestPosts from '~/components/sections/LatestPosts.astro';
-import BentoGrid from '~/components/sections/BentoGrid.astro';
-import BentoItem from '~/components/ui/BentoItem.astro';
 import { Cpu, Globe, Zap, BarChart, ShieldCheck, Settings, FileCode, Search, Moon, Eye } from 'lucide-react';
 import FeaturesList from '~/components/sections/FeaturesList.astro';
 import FeatureItem from '~/components/ui/FeatureItem.astro';
-import Testimonials from '~/components/sections/Testimonials.astro';
-import Testimonial from '~/components/ui/Testimonial.astro';
 import Stats from '~/components/sections/Stats.astro';
 import StatItem from '~/components/ui/StatItem.astro';
 import CTA from '~/components/sections/CTA.astro';
-import FAQ from '~/components/sections/FAQ.astro';
-import LogoCloud from '~/components/sections/LogoCloud.astro';
-import TechStack from '~/components/sections/TechStack.astro';
-import NewsletterSection from '~/components/sections/NewsletterSection.astro';
 import { useTranslations } from '~/i18n/utils';
 
 export interface Props {
@@ -33,15 +24,6 @@ export interface Props {
 
 const { lang, heroVariant = 'centered' } = Astro.props;
 const t = useTranslations(lang);
-
-const logos = [
-  { name: 'Vite', src: logoVite, description: t['logo.vite.desc'] },
-  { name: 'Cloudflare', src: logoCloudflare, description: t['logo.cloudflare.desc'] },
-  { name: 'Astro', src: logoAstro, description: t['logo.astro.desc'] },
-  { name: 'React', src: logoReact, description: t['logo.react.desc'] },
-  { name: 'Tailwind CSS', src: logoTailwind, description: t['logo.tailwind.desc'] },
-  { name: 'Framer Motion', src: logoFramer, description: t['logo.framer.desc'] },
-];
 
 const benefits = [
   { title: t['benefits.1.title'], description: t['benefits.1.desc'], icon: Settings },
@@ -57,14 +39,6 @@ const stats = [
   { value: "99.9%", label: t['stats.uptime'] },
   { value: "50M+", label: t['stats.requests'] },
   { value: "24/7", label: t['stats.support'] },
-];
-
-const testimonials = [
-  { text: t['testimonials.1.text'], author: t['testimonials.1.author'], role: t['testimonials.1.role'] },
-  { text: t['testimonials.2.text'], author: t['testimonials.2.author'], role: t['testimonials.2.role'] },
-  { text: t['testimonials.3.text'], author: t['testimonials.3.author'], role: t['testimonials.3.role'] },
-  { text: t['testimonials.4.text'], author: t['testimonials.4.author'], role: t['testimonials.4.role'] },
-  { text: t['testimonials.5.text'], author: t['testimonials.5.author'], role: t['testimonials.5.role'] },
 ];
 
 const homeFaqs = [
@@ -85,24 +59,18 @@ const homeFaqs = [
     secondaryCta={{ text: t['hero.learnMore'], href: `/${lang}/features` }}
 />
 
-<Section class="py-24">
-    <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold mb-4">{t['benefits.title']}</h2>
-        <p class="text-muted-foreground">{t['benefits.subtitle']}</p>
-    </div>
-    <FeaturesList>
-        {benefits.map((benefit) => (
-            <FeatureItem title={benefit.title} description={benefit.description}>
-                <benefit.icon slot="icon" className="w-6 h-6" />
-            </FeatureItem>
-        ))}
-    </FeaturesList>
+<Section class="py-0 overflow-visible">
+<Stats>
+    {stats.map((stat) => (
+        <StatItem value={stat.value} label={stat.label} />
+    ))}
+</Stats>
 </Section>
 
 <CTA
     title={t['cta.readyToLaunch']}
     description={t['cta.description']}
-    primaryBtn={{ text: t['cta.primary'], href: `/${lang}/pricing` }}
-    secondaryBtn={{ text: t['cta.secondary'], href: `/${lang}/contact` }}
+    primaryBtn={{ text: t['cta.primary'], href: `/${lang}/contact` }}
+    secondaryBtn={{ text: t['cta.secondary'], href: `/${lang}/about` }}
     disclaimer={t['cta.disclaimer']}
 />

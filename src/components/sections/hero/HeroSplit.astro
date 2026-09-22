@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import Button from '~/components/ui/Button.astro';
 import Badge from '~/components/ui/Badge.astro';
-import gargantua from '~/assets/blog/interstellar-gargantua.webp';
+import gargantua from '~/assets/filament-outline-draft.png';
 import type { HeroVariantProps } from './types';
 
 export interface Props extends HeroVariantProps {}
@@ -14,9 +14,6 @@ const { badge, title, highlight, description, primaryCta, secondaryCta } = Astro
   <div class="container mx-auto px-6 relative z-10">
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div class="hero-content opacity-0 translate-y-5 text-left">
-        <Badge class="mb-6 border-foreground/10">
-          {badge}
-        </Badge>
         <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-8 text-foreground">
           {title} <br />
           <span class="text-primary">
@@ -70,7 +67,7 @@ const { badge, title, highlight, description, primaryCta, secondaryCta } = Astro
   }
 
   .orbit-visual {
-    animation: spin 60s linear infinite;
+    animation: spin 30s linear infinite;
   }
 
   @keyframes fadeUp {

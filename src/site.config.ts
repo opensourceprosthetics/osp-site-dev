@@ -2,24 +2,18 @@
 
 export const siteConfig = {
   name: 'Open Source Prosthetics',
-  description: '3D prosthetics for the world.',
+  description: '3D Printed Prosthetics for the world.',
   logo: {
     src: '/logo.svg',
     srcDark: '/logo-inverted.svg',       // Used when strategy is 'switch'
-    alt: 'Open Source Prosthetics Logo',
+    alt: 'OSP Logo',
     strategy: 'switch' as 'switch' | 'invert' | 'static', // 'invert' | 'switch' | 'static'
   },
   ogImage: '/og-image.webp',
   primaryColor: '#0f8d78', // Default primary color
   search: {
-    enabled: false,
+    enabled: true,
   },
- // announcement: {
- //   enabled: true,
- //   id: 'upgrade_v2_0_0', // Change this ID to reshow the banner
- //   link: '/changelog',
- //   localizeLink: true, // Set to true to apply i18n routing to the link, false for external/absolute links
- // },
   blog: {
     postsPerPage: 6,
   },
@@ -29,7 +23,7 @@ export const siteConfig = {
       sales: 'sales@opensourceprosthetics.org',
     },
     phone: {
-      main: '+27 62 544 0378',
+      main: '+27 123-4567',
       label: 'Mon-Fri 9am-6pm PST'
     },
     address: {
@@ -66,13 +60,13 @@ export const siteConfig = {
 
 export const NAV_LINKS = [
   {
-    href: '/',
-    label: 'Home'
+    href: '/about',
+    label: 'About',
   },
   {
-    href: '/about',
-    label: 'About Us'
-  }
+    href: '/contact',
+    label: 'Contact',
+  },
 ];
 
 export const ACTION_LINKS = {
@@ -91,20 +85,14 @@ export const ACTION_LINKS = {
 };
 
 export const FOOTER_LINKS = {
-  product: {
-    title: 'Product',
-    links: [
-      { href: '/features', label: 'Features' },
-      { href: '/about', label: 'About' },
-      { href: '/pricing', label: 'Pricing' },
-      { href: '/changelog', label: 'Changelog' },
-    ],
+  company: {
+    title: 'Company',
+    links: [{ href: '/about', label: 'About' }],
   },
-  legal: {
-    title: 'Legal',
+  services: {
+    title: 'Services',
     links: [
-      { href: '/privacy', label: 'Privacy', localize: false },
-      { href: '/terms', label: 'Terms', localize: false }
+      { href: '/contact', label: 'Contact', localize: false }
     ],
   },
 };

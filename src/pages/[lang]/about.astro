@@ -11,11 +11,11 @@ import { Zap, Shield, Smartphone, Globe, Code, Layers } from 'lucide-react';
 import { languages } from '~/i18n/ui';
 import { useTranslations } from '~/i18n/utils';
 
-import cooperImage from '~/assets/blog/interstellar-cooper.webp';
-import brandImage from '~/assets/blog/interstellar-brand.webp';
-import murphyImage from '~/assets/blog/interstellar-murphy.webp';
-import tarsImage from '~/assets/blog/interstellar-tars-illustration.webp';
-import storyImage from '~/assets/blog/interstellar-story.webp';
+import cooperImage from '~/assets/blog/interstellar-cooper.webp'; 
+import brandImage from '~/assets/blog/interstellar-brand.webp'; 
+import murphyImage from '~/assets/blog/interstellar-murphy.webp'; 
+import tarsImage from '~/assets/blog/interstellar-tars-illustration.webp'; 
+import aboutImage from '~/assets/pages/illustrated-graphics-17.png';
 
 import Timeline from '~/components/sections/Timeline.astro';
 import Section from '~/components/layout/Section.astro';
@@ -77,13 +77,20 @@ const teamMembers = [
 
 ---
 
-<Layout title="About Us - Astro Boilerplate" description="Learn about our mission and team.">
-<PageHeader title={t['about.title']} description={t['about.mission']} />
+<Layout 
+	title="About Us - Open Source Prosthetics." 
+	description="Who We Are."
+>
+	
+<PageHeader 
+	title={t['about.title']} 
+	description={t['about.mission']} 
+/>
 
   <ContentSection
     title={t['about.story.title']}
-    image={storyImage}
-    imageAlt="Endurance spaceship approaching a wormhole"
+    image={aboutImage}
+    imageAlt="Donation to Prosthetic"
   >
     <Text>{t['about.story.p1']}</Text>
     <Text>{t['about.story.p2']}</Text>
@@ -97,17 +104,6 @@ const teamMembers = [
 
   <Section>
       <Container>
-          <div class="mb-24">
-             <Heading level={2} class="text-center mb-12">{t['about.why.title']}</Heading>
-             <FeaturesList>
-                {aboutBenefits.map((benefit) => (
-                    <FeatureItem title={benefit.title} description={benefit.description}>
-                        <benefit.icon slot="icon" className="w-6 h-6" />
-                    </FeatureItem>
-                ))}
-             </FeaturesList>
-          </div>
-
           <div>
             <TeamSection title={t['about.team.title']}>
               {teamMembers.map((member) => (

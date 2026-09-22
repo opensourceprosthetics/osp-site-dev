@@ -17,8 +17,10 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const t = useTranslations(lang);
 ---
-
-<Layout title="Contact Us - Astro Boilerplate" description="Get in touch with our team.">
+<Layout 
+	title="Contact Us - Open Source Prosthetics" 
+	description="Get in touch with our team"
+>
   <PageHeader 
       title={t['contact.title']}
       description={t['contact.desc']}
@@ -40,7 +42,6 @@ const t = useTranslations(lang);
                       <p class="text-muted-foreground">{siteConfig.contact.email.sales}</p>
                   </div>
               </div>
-
               <div class="flex items-start gap-4">
                   <div class="p-3 rounded-lg bg-primary/10 text-primary">
                       <Phone className="w-6 h-6" />
@@ -51,22 +52,15 @@ const t = useTranslations(lang);
                       <p class="text-muted-foreground">{siteConfig.contact.phone.label}</p>
                   </div>
               </div>
-
-               <div class="flex items-start gap-4">
+              <div class="flex items-start gap-4">
                   <div class="p-3 rounded-lg bg-primary/10 text-primary">
                       <MapPin className="w-6 h-6" />
-                  </div>
+              </div>
                   <div>
                       <h3 class="font-bold mb-1">{t['contact.office']}</h3>
                       <p class="text-muted-foreground">{siteConfig.contact.address.city}</p>
                       <p class="text-muted-foreground">{siteConfig.contact.address.full}</p>
                   </div>
-              </div>
-              
-              <div class="p-6 rounded-2xl bg-linear-to-br from-primary/20 to-purple-500/20 border border-white/10 mt-8">
-                  <h3 class="font-bold mb-2">{t['contact.enterprise.title']}</h3>
-                  <p class="text-sm text-muted-foreground mb-4">{t['contact.enterprise.desc']}</p>
-                  <a href="#" class="text-sm font-medium text-primary hover:underline">{t['contact.enterprise.btn']} &rarr;</a>
               </div>
           </div>
 
