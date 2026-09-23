@@ -12,7 +12,7 @@ export const siteConfig = {
   ogImage: '/og-image.webp',
   primaryColor: '#0f8d78', // Default primary color
   search: {
-    enabled: true,
+    enabled: false,
   },
   blog: {
     postsPerPage: 6,
