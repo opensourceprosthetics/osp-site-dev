@@ -1,5 +1,3 @@
-
-
 export const siteConfig = {
   name: 'Open Source Prosthetics',
   description: '3D Printed Prosthetics for the world.',
