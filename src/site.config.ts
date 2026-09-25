@@ -90,7 +90,7 @@ export const FOOTER_LINKS = {
   services: {
     title: 'Services',
     links: [
-      { href: '/contact', label: 'Contact', localize: false }
+      { href: '/contact', label: 'Contact' }
     ],
   },
 };
